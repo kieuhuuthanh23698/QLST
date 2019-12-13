@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLST", "QLST\QLST.csproj", "{E8870909-F06E-4102-AF38-5CC5CB1E89D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{6F0760C8-0A36-46B0-9558-C50A7106925A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8870909-F06E-4102-AF38-5CC5CB1E89D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8870909-F06E-4102-AF38-5CC5CB1E89D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8870909-F06E-4102-AF38-5CC5CB1E89D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8870909-F06E-4102-AF38-5CC5CB1E89D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0760C8-0A36-46B0-9558-C50A7106925A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0760C8-0A36-46B0-9558-C50A7106925A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0760C8-0A36-46B0-9558-C50A7106925A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0760C8-0A36-46B0-9558-C50A7106925A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
