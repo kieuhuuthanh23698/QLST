@@ -21,6 +21,7 @@ namespace QLST
         public static frmDoiTenNhomMatHang frmDoiTenNhomMatHang = null;
         public static frmDanhMucKhachHang frmDanhMucKhachHang = null;
         public static frmDanhMucNhanVien frmDanhMucNhanVien = null;
+        public static frmDanhMucNhaCungCap frmDanhMucNhaCungCap = null;
         //form thống kê
         public static frmThongKeHoaDon frmThongKeHoaDon = null;
 

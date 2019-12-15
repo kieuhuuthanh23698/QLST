@@ -7,7 +7,7 @@ namespace DAL
 {
     public static class Context
     {
-        public static QLSTDataContext context;
+        public static QLSTDataContext context=null;
 
         public static QLSTDataContext getInstance() {
             if (context == null)

@@ -297,5 +297,32 @@ namespace QLST
         {
             //phanQuyen();
         }
+
+        private void danhMụcNhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < tab.Items.Count; i++)
+                if (tab.Items[i].ToString() == "Danh mục nhà cung cấp")
+                {
+                    tab.Items[i].Visible = true;
+                    menuStrip2.Show();
+                    return;
+                }
+            DevComponents.DotNetBar.DockContainerItem item = new DevComponents.DotNetBar.DockContainerItem("Danh mục nhà cung cấp", "Danh mục nhà cung cấp");
+            tab.Items.Add(item);
+            Image a = global::QLST.Properties.Resources.Nhanvien_1;
+            item.Image = a;
+            item.Selected = true;
+            DevComponents.DotNetBar.PanelDockContainer panel = new DevComponents.DotNetBar.PanelDockContainer();
+            panel.Name = "Danh mục nhà cung cấp";
+            item.Control = new Control();
+            item.Control = panel;
+            if (Program.frmDanhMucNhaCungCap == null || Program.frmDanhMucNhaCungCap.IsDisposed)
+                Program.frmDanhMucNhaCungCap = new frmDanhMucNhaCungCap();
+            Program.frmDanhMucNhaCungCap.Dock = DockStyle.Fill;
+            Program.frmDanhMucNhaCungCap.TopLevel = false;
+            item.Control.Controls.Add(Program.frmDanhMucNhaCungCap);
+            Program.frmDanhMucNhaCungCap.Show();
+            menuStrip2.Show();
+        }
     }
 }
