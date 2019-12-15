@@ -9,3 +9,8 @@ C:\Users\QuocDai\Desktop\QLST\DAL\bin\Debug\DAL.dll
 C:\Users\QuocDai\Desktop\QLST\DAL\bin\Debug\DAL.pdb
 C:\Users\QuocDai\Desktop\QLST\DAL\obj\Debug\DAL.dll
 C:\Users\QuocDai\Desktop\QLST\DAL\obj\Debug\DAL.pdb
+C:\Users\Huy Duong\Documents\GitHub\QLST\QLST\DAL\bin\Debug\DAL.dll.config
+C:\Users\Huy Duong\Documents\GitHub\QLST\QLST\DAL\bin\Debug\DAL.dll
+C:\Users\Huy Duong\Documents\GitHub\QLST\QLST\DAL\bin\Debug\DAL.pdb
+C:\Users\Huy Duong\Documents\GitHub\QLST\QLST\DAL\obj\Debug\DAL.dll
+C:\Users\Huy Duong\Documents\GitHub\QLST\QLST\DAL\obj\Debug\DAL.pdb

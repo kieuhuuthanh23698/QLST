@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLST" Class="QLSTDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-CQ1BQQH5\SQLEXPRESS;Initial Catalog=QLST;User ID=sa" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QLSTConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-96CRGKS\SQLEXPRESS;Initial Catalog=QLST;User ID=sa" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QLSTConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BANG_GIA" Member="BANG_GIAs">
     <Type Name="BANG_GIA">
       <Column Name="MASP" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -60,7 +60,6 @@
       <Column Name="NGAYDAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="GHICHU_DDH" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Association Name="DON_DAT_HANG_NCC_CHI_TIET_DDH" Member="CHI_TIET_DDHs" ThisKey="MADDH" OtherKey="MADDH" Type="CHI_TIET_DDH" />
-      <Association Name="DON_DAT_HANG_NCC_PHIEUNHAP" Member="PHIEUNHAPs" ThisKey="MADDH" OtherKey="MADDH" Type="PHIEUNHAP" />
       <Association Name="NHA_CUNG_CAP_DON_DAT_HANG_NCC" Member="NHA_CUNG_CAP" ThisKey="MANCC" OtherKey="MANCC" Type="NHA_CUNG_CAP" IsForeignKey="true" />
     </Type>
   </Table>
@@ -191,7 +190,6 @@
       <Column Name="NGAYLAP_PN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="TONGTIEN_PN" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Association Name="PHIEUNHAP_LO_HANG" Member="LO_HANGs" ThisKey="MAPN" OtherKey="MAPN" Type="LO_HANG" />
-      <Association Name="DON_DAT_HANG_NCC_PHIEUNHAP" Member="DON_DAT_HANG_NCC" ThisKey="MADDH" OtherKey="MADDH" Type="DON_DAT_HANG_NCC" IsForeignKey="true" />
     </Type>
   </Table>
   <Function Name="dbo.getHangHoa" Method="getHangHoa" IsComposable="true">

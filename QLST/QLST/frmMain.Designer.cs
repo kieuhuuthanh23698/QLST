@@ -41,6 +41,7 @@
             this.đặtHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhMụcKháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhMụcNhânViênToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhMụcNhàCungCấpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nHÂNSỰToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bÁOCÁOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,7 +74,6 @@
             this.dockSite7 = new DevComponents.DotNetBar.DockSite();
             this.dockSite3 = new DevComponents.DotNetBar.DockSite();
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
-            this.danhMụcNhàCungCấpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toolBox)).BeginInit();
             this.dockSite9.SuspendLayout();
@@ -97,8 +97,8 @@
             this.menuStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip2.Size = new System.Drawing.Size(1399, 28);
+            this.menuStrip2.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip2.Size = new System.Drawing.Size(1028, 24);
             this.menuStrip2.TabIndex = 38;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -112,14 +112,14 @@
             this.hỆTHỐNGToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hỆTHỐNGToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.hỆTHỐNGToolStripMenuItem.Name = "hỆTHỐNGToolStripMenuItem";
-            this.hỆTHỐNGToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
+            this.hỆTHỐNGToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.hỆTHỐNGToolStripMenuItem.Text = "HỆ THỐNG";
             // 
             // đỔIMẬTKHẨUĐĂNGNHẬPToolStripMenuItem
             // 
             this.đỔIMẬTKHẨUĐĂNGNHẬPToolStripMenuItem.Image = global::QLST.Properties.Resources.change_pass;
             this.đỔIMẬTKHẨUĐĂNGNHẬPToolStripMenuItem.Name = "đỔIMẬTKHẨUĐĂNGNHẬPToolStripMenuItem";
-            this.đỔIMẬTKHẨUĐĂNGNHẬPToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
+            this.đỔIMẬTKHẨUĐĂNGNHẬPToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.đỔIMẬTKHẨUĐĂNGNHẬPToolStripMenuItem.Text = "ĐỔI MẬT KHẨU ĐĂNG NHẬP";
             this.đỔIMẬTKHẨUĐĂNGNHẬPToolStripMenuItem.Click += new System.EventHandler(this.changePass);
             // 
@@ -127,7 +127,7 @@
             // 
             this.đĂNGXUẤTKHỎIHỆTHỐNGToolStripMenuItem.Image = global::QLST.Properties.Resources.logout_icon;
             this.đĂNGXUẤTKHỎIHỆTHỐNGToolStripMenuItem.Name = "đĂNGXUẤTKHỎIHỆTHỐNGToolStripMenuItem";
-            this.đĂNGXUẤTKHỎIHỆTHỐNGToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
+            this.đĂNGXUẤTKHỎIHỆTHỐNGToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.đĂNGXUẤTKHỎIHỆTHỐNGToolStripMenuItem.Text = "ĐĂNG XUẤT KHỎI HỆ THỐNG";
             this.đĂNGXUẤTKHỎIHỆTHỐNGToolStripMenuItem.Click += new System.EventHandler(this.logout);
             // 
@@ -135,7 +135,7 @@
             // 
             this.Exit_ToolStripMenuItem.Image = global::QLST.Properties.Resources.Close_2_icon;
             this.Exit_ToolStripMenuItem.Name = "Exit_ToolStripMenuItem";
-            this.Exit_ToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
+            this.Exit_ToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.Exit_ToolStripMenuItem.Text = "THOÁT KHỎI HỆ THỐNG";
             this.Exit_ToolStripMenuItem.Click += new System.EventHandler(this.exit);
             // 
@@ -150,7 +150,7 @@
             this.hOẠTĐỘNGToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hOẠTĐỘNGToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.hOẠTĐỘNGToolStripMenuItem.Name = "hOẠTĐỘNGToolStripMenuItem";
-            this.hOẠTĐỘNGToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+            this.hOẠTĐỘNGToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.hOẠTĐỘNGToolStripMenuItem.Text = "DANH MỤC";
             // 
             // daToolStripMenuItem
@@ -161,7 +161,7 @@
             this.daToolStripMenuItem.Enabled = false;
             this.daToolStripMenuItem.Image = global::QLST.Properties.Resources.hang_hoa;
             this.daToolStripMenuItem.Name = "daToolStripMenuItem";
-            this.daToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.daToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.daToolStripMenuItem.Tag = "frmDM_MH";
             this.daToolStripMenuItem.Text = "Danh mục mặt hàng";
             this.daToolStripMenuItem.Click += new System.EventHandler(this.openDanhMucMatHang);
@@ -170,14 +170,15 @@
             // 
             this.nhậpHàngToolStripMenuItem.Image = global::QLST.Properties.Resources.themHangVaoKho2_icon;
             this.nhậpHàngToolStripMenuItem.Name = "nhậpHàngToolStripMenuItem";
-            this.nhậpHàngToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
+            this.nhậpHàngToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.nhậpHàngToolStripMenuItem.Text = "Nhập hàng";
+            this.nhậpHàngToolStripMenuItem.Click += new System.EventHandler(this.nhậpHàngToolStripMenuItem_Click);
             // 
             // đặtHàngToolStripMenuItem
             // 
             this.đặtHàngToolStripMenuItem.Image = global::QLST.Properties.Resources.themHangVaoKho_icon;
             this.đặtHàngToolStripMenuItem.Name = "đặtHàngToolStripMenuItem";
-            this.đặtHàngToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
+            this.đặtHàngToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.đặtHàngToolStripMenuItem.Text = "Đặt hàng";
             // 
             // danhMụcKháchHàngToolStripMenuItem
@@ -185,7 +186,7 @@
             this.danhMụcKháchHàngToolStripMenuItem.Enabled = false;
             this.danhMụcKháchHàngToolStripMenuItem.Image = global::QLST.Properties.Resources.khach_hang_2;
             this.danhMụcKháchHàngToolStripMenuItem.Name = "danhMụcKháchHàngToolStripMenuItem";
-            this.danhMụcKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.danhMụcKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.danhMụcKháchHàngToolStripMenuItem.Tag = "frmDM_KH";
             this.danhMụcKháchHàngToolStripMenuItem.Text = "Danh mục khách hàng";
             this.danhMụcKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.openDanhMucKhachHang);
@@ -195,10 +196,18 @@
             this.danhMụcNhânViênToolStripMenuItem1.Enabled = false;
             this.danhMụcNhânViênToolStripMenuItem1.Image = global::QLST.Properties.Resources.nhan_vien;
             this.danhMụcNhânViênToolStripMenuItem1.Name = "danhMụcNhânViênToolStripMenuItem1";
-            this.danhMụcNhânViênToolStripMenuItem1.Size = new System.Drawing.Size(242, 26);
+            this.danhMụcNhânViênToolStripMenuItem1.Size = new System.Drawing.Size(211, 26);
             this.danhMụcNhânViênToolStripMenuItem1.Tag = "frmDM_NV";
             this.danhMụcNhânViênToolStripMenuItem1.Text = "Danh mục nhân viên";
             this.danhMụcNhânViênToolStripMenuItem1.Click += new System.EventHandler(this.openDanhMucNhanVien);
+            // 
+            // danhMụcNhàCungCấpToolStripMenuItem
+            // 
+            this.danhMụcNhàCungCấpToolStripMenuItem.Image = global::QLST.Properties.Resources.Nhanvien_1;
+            this.danhMụcNhàCungCấpToolStripMenuItem.Name = "danhMụcNhàCungCấpToolStripMenuItem";
+            this.danhMụcNhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.danhMụcNhàCungCấpToolStripMenuItem.Text = "Danh mục nhà cung cấp";
+            this.danhMụcNhàCungCấpToolStripMenuItem.Click += new System.EventHandler(this.danhMụcNhàCungCấpToolStripMenuItem_Click);
             // 
             // nHÂNSỰToolStripMenuItem
             // 
@@ -208,14 +217,14 @@
             this.nHÂNSỰToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nHÂNSỰToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.nHÂNSỰToolStripMenuItem.Name = "nHÂNSỰToolStripMenuItem";
-            this.nHÂNSỰToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.nHÂNSỰToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.nHÂNSỰToolStripMenuItem.Text = "QUẢN TRỊ";
             // 
             // pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem
             // 
             this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem.Image = global::QLST.Properties.Resources.nhan_vien;
             this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem.Name = "pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem";
-            this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
+            this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem.Text = "PHÂN QUYỀN NHÂN VIÊN";
             this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem.Click += new System.EventHandler(this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem_Click);
             // 
@@ -229,7 +238,7 @@
             this.bÁOCÁOToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bÁOCÁOToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bÁOCÁOToolStripMenuItem.Name = "bÁOCÁOToolStripMenuItem";
-            this.bÁOCÁOToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.bÁOCÁOToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.bÁOCÁOToolStripMenuItem.Text = "BÁO CÁO";
             // 
             // bÁOCÁOQUỸToolStripMenuItem
@@ -237,7 +246,7 @@
             this.bÁOCÁOQUỸToolStripMenuItem.Enabled = false;
             this.bÁOCÁOQUỸToolStripMenuItem.Image = global::QLST.Properties.Resources.phieubanhang_1;
             this.bÁOCÁOQUỸToolStripMenuItem.Name = "bÁOCÁOQUỸToolStripMenuItem";
-            this.bÁOCÁOQUỸToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.bÁOCÁOQUỸToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.bÁOCÁOQUỸToolStripMenuItem.Tag = "frmHD";
             this.bÁOCÁOQUỸToolStripMenuItem.Text = "THỐNG KÊ DOANH THU";
             this.bÁOCÁOQUỸToolStripMenuItem.Click += new System.EventHandler(this.openThongKeHoaDon);
@@ -245,13 +254,13 @@
             // tHÔNGKÊSẢNLUONONNG7ToolStripMenuItem
             // 
             this.tHÔNGKÊSẢNLUONONNG7ToolStripMenuItem.Name = "tHÔNGKÊSẢNLUONONNG7ToolStripMenuItem";
-            this.tHÔNGKÊSẢNLUONONNG7ToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.tHÔNGKÊSẢNLUONONNG7ToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.tHÔNGKÊSẢNLUONONNG7ToolStripMenuItem.Text = "THÔNG KÊ SẢN LƯỢNG BÁN";
             // 
             // tHỐNGKÊSẢNLƯỢNGNHẬPToolStripMenuItem
             // 
             this.tHỐNGKÊSẢNLƯỢNGNHẬPToolStripMenuItem.Name = "tHỐNGKÊSẢNLƯỢNGNHẬPToolStripMenuItem";
-            this.tHỐNGKÊSẢNLƯỢNGNHẬPToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.tHỐNGKÊSẢNLƯỢNGNHẬPToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.tHỐNGKÊSẢNLƯỢNGNHẬPToolStripMenuItem.Text = "THỐNG KÊ SẢN LƯỢNG NHẬP";
             // 
             // tRỢGIÚPToolStripMenuItem
@@ -262,14 +271,14 @@
             this.tRỢGIÚPToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tRỢGIÚPToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tRỢGIÚPToolStripMenuItem.Name = "tRỢGIÚPToolStripMenuItem";
-            this.tRỢGIÚPToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
+            this.tRỢGIÚPToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.tRỢGIÚPToolStripMenuItem.Text = "TRỢ GIÚP";
             // 
             // tHÔNGToolStripMenuItem
             // 
             this.tHÔNGToolStripMenuItem.Image = global::QLST.Properties.Resources.information;
             this.tHÔNGToolStripMenuItem.Name = "tHÔNGToolStripMenuItem";
-            this.tHÔNGToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.tHÔNGToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.tHÔNGToolStripMenuItem.Text = "THÔNG TIN PHẦN MỀM";
             // 
             // toolBox
@@ -284,10 +293,9 @@
             this.btnDanhMucNhanVien,
             this.btnThongKeHoaDon,
             this.btnThoat});
-            this.toolBox.Location = new System.Drawing.Point(0, 28);
-            this.toolBox.Margin = new System.Windows.Forms.Padding(4);
+            this.toolBox.Location = new System.Drawing.Point(0, 24);
             this.toolBox.Name = "toolBox";
-            this.toolBox.Size = new System.Drawing.Size(1399, 33);
+            this.toolBox.Size = new System.Drawing.Size(1028, 33);
             this.toolBox.Stretch = true;
             this.toolBox.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.toolBox.TabIndex = 39;
@@ -381,10 +389,10 @@
             this.dockSite4.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.dockSite4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dockSite4.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer();
-            this.dockSite4.Location = new System.Drawing.Point(0, 754);
-            this.dockSite4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dockSite4.Location = new System.Drawing.Point(0, 609);
+            this.dockSite4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dockSite4.Name = "dockSite4";
-            this.dockSite4.Size = new System.Drawing.Size(1399, 0);
+            this.dockSite4.Size = new System.Drawing.Size(1028, 0);
             this.dockSite4.TabIndex = 44;
             this.dockSite4.TabStop = false;
             // 
@@ -394,11 +402,11 @@
             this.dockSite9.Controls.Add(this.tab);
             this.dockSite9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dockSite9.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer(new DevComponents.DotNetBar.DocumentBaseContainer[] {
-            ((DevComponents.DotNetBar.DocumentBaseContainer)(new DevComponents.DotNetBar.DocumentBarContainer(this.tab, 1399, 693)))}, DevComponents.DotNetBar.eOrientation.Horizontal);
-            this.dockSite9.Location = new System.Drawing.Point(0, 61);
-            this.dockSite9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            ((DevComponents.DotNetBar.DocumentBaseContainer)(new DevComponents.DotNetBar.DocumentBarContainer(this.tab, 1028, 552)))}, DevComponents.DotNetBar.eOrientation.Horizontal);
+            this.dockSite9.Location = new System.Drawing.Point(0, 57);
+            this.dockSite9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dockSite9.Name = "dockSite9";
-            this.dockSite9.Size = new System.Drawing.Size(1399, 693);
+            this.dockSite9.Size = new System.Drawing.Size(1028, 552);
             this.dockSite9.TabIndex = 49;
             this.dockSite9.TabStop = false;
             // 
@@ -408,7 +416,6 @@
             this.tab.AccessibleName = "DotNetBar Bar";
             this.tab.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.tab.AlwaysDisplayDockTab = true;
-            this.tab.CanCustomize = false;
             this.tab.CanDockBottom = false;
             this.tab.CanDockDocument = true;
             this.tab.CanDockLeft = false;
@@ -419,16 +426,14 @@
             this.tab.Controls.Add(this.panelDockContainer1);
             this.tab.DockTabAlignment = DevComponents.DotNetBar.eTabStripAlignment.Top;
             this.tab.DockTabCloseButtonVisible = true;
-            this.tab.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tab.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tab.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.dockContainerItem1});
             this.tab.LayoutType = DevComponents.DotNetBar.eLayoutType.DockContainer;
             this.tab.Location = new System.Drawing.Point(0, 0);
-            this.tab.Margin = new System.Windows.Forms.Padding(4);
             this.tab.MenuBar = true;
             this.tab.Name = "tab";
             this.tab.SelectedDockTab = 0;
-            this.tab.Size = new System.Drawing.Size(1399, 693);
             this.tab.Stretch = true;
             this.tab.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
             this.tab.TabIndex = 0;
@@ -441,15 +446,16 @@
             this.panelDockContainer1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
             this.panelDockContainer1.Controls.Add(this.menuStrip1);
             this.panelDockContainer1.Location = new System.Drawing.Point(3, 28);
-            this.panelDockContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelDockContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelDockContainer1.Name = "panelDockContainer1";
-            this.panelDockContainer1.Size = new System.Drawing.Size(1393, 662);
+            this.panelDockContainer1.Size = new System.Drawing.Size(1022, 521);
             this.panelDockContainer1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelDockContainer1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
             this.panelDockContainer1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.panelDockContainer1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
             this.panelDockContainer1.Style.GradientAngle = 90;
             this.panelDockContainer1.TabIndex = 0;
+            this.panelDockContainer1.Visible = true;
             // 
             // menuStrip1
             // 
@@ -459,9 +465,10 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnLogout,
             this.txtNameNV});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 628);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 491);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1393, 34);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1022, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -472,7 +479,7 @@
             this.btnLogout.ForeColor = System.Drawing.Color.Red;
             this.btnLogout.Image = global::QLST.Properties.Resources.logout_icon;
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(110, 30);
+            this.btnLogout.Size = new System.Drawing.Size(94, 26);
             this.btnLogout.Text = "  LOGOUT";
             // 
             // txtNameNV
@@ -483,7 +490,7 @@
             this.txtNameNV.ForeColor = System.Drawing.Color.Red;
             this.txtNameNV.Name = "txtNameNV";
             this.txtNameNV.ReadOnly = true;
-            this.txtNameNV.Size = new System.Drawing.Size(200, 30);
+            this.txtNameNV.Size = new System.Drawing.Size(151, 26);
             this.txtNameNV.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // dockContainerItem1
@@ -499,10 +506,10 @@
             this.dockSite1.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.dockSite1.Dock = System.Windows.Forms.DockStyle.Left;
             this.dockSite1.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer();
-            this.dockSite1.Location = new System.Drawing.Point(0, 61);
-            this.dockSite1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dockSite1.Location = new System.Drawing.Point(0, 57);
+            this.dockSite1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dockSite1.Name = "dockSite1";
-            this.dockSite1.Size = new System.Drawing.Size(0, 693);
+            this.dockSite1.Size = new System.Drawing.Size(0, 552);
             this.dockSite1.TabIndex = 41;
             this.dockSite1.TabStop = false;
             // 
@@ -511,10 +518,10 @@
             this.dockSite2.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.dockSite2.Dock = System.Windows.Forms.DockStyle.Right;
             this.dockSite2.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer();
-            this.dockSite2.Location = new System.Drawing.Point(1399, 61);
-            this.dockSite2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dockSite2.Location = new System.Drawing.Point(1028, 57);
+            this.dockSite2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dockSite2.Name = "dockSite2";
-            this.dockSite2.Size = new System.Drawing.Size(0, 693);
+            this.dockSite2.Size = new System.Drawing.Size(0, 552);
             this.dockSite2.TabIndex = 42;
             this.dockSite2.TabStop = false;
             // 
@@ -522,10 +529,10 @@
             // 
             this.dockSite8.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.dockSite8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dockSite8.Location = new System.Drawing.Point(0, 754);
-            this.dockSite8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dockSite8.Location = new System.Drawing.Point(0, 609);
+            this.dockSite8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dockSite8.Name = "dockSite8";
-            this.dockSite8.Size = new System.Drawing.Size(1399, 0);
+            this.dockSite8.Size = new System.Drawing.Size(1028, 0);
             this.dockSite8.TabIndex = 48;
             this.dockSite8.TabStop = false;
             // 
@@ -534,9 +541,9 @@
             this.dockSite5.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.dockSite5.Dock = System.Windows.Forms.DockStyle.Left;
             this.dockSite5.Location = new System.Drawing.Point(0, 0);
-            this.dockSite5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dockSite5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dockSite5.Name = "dockSite5";
-            this.dockSite5.Size = new System.Drawing.Size(0, 754);
+            this.dockSite5.Size = new System.Drawing.Size(0, 609);
             this.dockSite5.TabIndex = 45;
             this.dockSite5.TabStop = false;
             // 
@@ -544,10 +551,10 @@
             // 
             this.dockSite6.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.dockSite6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dockSite6.Location = new System.Drawing.Point(1399, 0);
-            this.dockSite6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dockSite6.Location = new System.Drawing.Point(1028, 0);
+            this.dockSite6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dockSite6.Name = "dockSite6";
-            this.dockSite6.Size = new System.Drawing.Size(0, 754);
+            this.dockSite6.Size = new System.Drawing.Size(0, 609);
             this.dockSite6.TabIndex = 46;
             this.dockSite6.TabStop = false;
             // 
@@ -556,9 +563,9 @@
             this.dockSite7.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.dockSite7.Dock = System.Windows.Forms.DockStyle.Top;
             this.dockSite7.Location = new System.Drawing.Point(0, 0);
-            this.dockSite7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dockSite7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dockSite7.Name = "dockSite7";
-            this.dockSite7.Size = new System.Drawing.Size(1399, 0);
+            this.dockSite7.Size = new System.Drawing.Size(1028, 0);
             this.dockSite7.TabIndex = 47;
             this.dockSite7.TabStop = false;
             // 
@@ -568,9 +575,9 @@
             this.dockSite3.Dock = System.Windows.Forms.DockStyle.Top;
             this.dockSite3.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer();
             this.dockSite3.Location = new System.Drawing.Point(0, 0);
-            this.dockSite3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dockSite3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dockSite3.Name = "dockSite3";
-            this.dockSite3.Size = new System.Drawing.Size(1399, 0);
+            this.dockSite3.Size = new System.Drawing.Size(1028, 0);
             this.dockSite3.TabIndex = 43;
             this.dockSite3.TabStop = false;
             // 
@@ -579,19 +586,11 @@
             this.buttonItem1.Name = "buttonItem1";
             this.buttonItem1.Text = "buttonItem1";
             // 
-            // danhMụcNhàCungCấpToolStripMenuItem
-            // 
-            this.danhMụcNhàCungCấpToolStripMenuItem.Image = global::QLST.Properties.Resources.Nhanvien_1;
-            this.danhMụcNhàCungCấpToolStripMenuItem.Name = "danhMụcNhàCungCấpToolStripMenuItem";
-            this.danhMụcNhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
-            this.danhMụcNhàCungCấpToolStripMenuItem.Text = "Danh mục nhà cung cấp";
-            this.danhMụcNhàCungCấpToolStripMenuItem.Click += new System.EventHandler(this.danhMụcNhàCungCấpToolStripMenuItem_Click);
-            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1399, 754);
+            this.ClientSize = new System.Drawing.Size(1028, 609);
             this.ControlBox = false;
             this.Controls.Add(this.dockSite9);
             this.Controls.Add(this.dockSite2);
@@ -607,9 +606,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1401, 756);
+            this.MinimumSize = new System.Drawing.Size(1027, 597);
             this.Name = "frmMain";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;

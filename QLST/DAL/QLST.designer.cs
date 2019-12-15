@@ -1390,8 +1390,6 @@ namespace DAL
 		
 		private EntitySet<CHI_TIET_DDH> _CHI_TIET_DDHs;
 		
-		private EntitySet<PHIEUNHAP> _PHIEUNHAPs;
-		
 		private EntityRef<NHA_CUNG_CAP> _NHA_CUNG_CAP;
 		
     #region Extensibility Method Definitions
@@ -1411,7 +1409,6 @@ namespace DAL
 		public DON_DAT_HANG_NCC()
 		{
 			this._CHI_TIET_DDHs = new EntitySet<CHI_TIET_DDH>(new Action<CHI_TIET_DDH>(this.attach_CHI_TIET_DDHs), new Action<CHI_TIET_DDH>(this.detach_CHI_TIET_DDHs));
-			this._PHIEUNHAPs = new EntitySet<PHIEUNHAP>(new Action<PHIEUNHAP>(this.attach_PHIEUNHAPs), new Action<PHIEUNHAP>(this.detach_PHIEUNHAPs));
 			this._NHA_CUNG_CAP = default(EntityRef<NHA_CUNG_CAP>);
 			OnCreated();
 		}
@@ -1513,19 +1510,6 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DON_DAT_HANG_NCC_PHIEUNHAP", Storage="_PHIEUNHAPs", ThisKey="MADDH", OtherKey="MADDH")]
-		public EntitySet<PHIEUNHAP> PHIEUNHAPs
-		{
-			get
-			{
-				return this._PHIEUNHAPs;
-			}
-			set
-			{
-				this._PHIEUNHAPs.Assign(value);
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NHA_CUNG_CAP_DON_DAT_HANG_NCC", Storage="_NHA_CUNG_CAP", ThisKey="MANCC", OtherKey="MANCC", IsForeignKey=true)]
 		public NHA_CUNG_CAP NHA_CUNG_CAP
 		{
@@ -1587,18 +1571,6 @@ namespace DAL
 		}
 		
 		private void detach_CHI_TIET_DDHs(CHI_TIET_DDH entity)
-		{
-			this.SendPropertyChanging();
-			entity.DON_DAT_HANG_NCC = null;
-		}
-		
-		private void attach_PHIEUNHAPs(PHIEUNHAP entity)
-		{
-			this.SendPropertyChanging();
-			entity.DON_DAT_HANG_NCC = this;
-		}
-		
-		private void detach_PHIEUNHAPs(PHIEUNHAP entity)
 		{
 			this.SendPropertyChanging();
 			entity.DON_DAT_HANG_NCC = null;
@@ -4089,8 +4061,6 @@ namespace DAL
 		
 		private EntitySet<LO_HANG> _LO_HANGs;
 		
-		private EntityRef<DON_DAT_HANG_NCC> _DON_DAT_HANG_NCC;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -4108,7 +4078,6 @@ namespace DAL
 		public PHIEUNHAP()
 		{
 			this._LO_HANGs = new EntitySet<LO_HANG>(new Action<LO_HANG>(this.attach_LO_HANGs), new Action<LO_HANG>(this.detach_LO_HANGs));
-			this._DON_DAT_HANG_NCC = default(EntityRef<DON_DAT_HANG_NCC>);
 			OnCreated();
 		}
 		
@@ -4143,10 +4112,6 @@ namespace DAL
 			{
 				if ((this._MADDH != value))
 				{
-					if (this._DON_DAT_HANG_NCC.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMADDHChanging(value);
 					this.SendPropertyChanging();
 					this._MADDH = value;
@@ -4206,40 +4171,6 @@ namespace DAL
 			set
 			{
 				this._LO_HANGs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DON_DAT_HANG_NCC_PHIEUNHAP", Storage="_DON_DAT_HANG_NCC", ThisKey="MADDH", OtherKey="MADDH", IsForeignKey=true)]
-		public DON_DAT_HANG_NCC DON_DAT_HANG_NCC
-		{
-			get
-			{
-				return this._DON_DAT_HANG_NCC.Entity;
-			}
-			set
-			{
-				DON_DAT_HANG_NCC previousValue = this._DON_DAT_HANG_NCC.Entity;
-				if (((previousValue != value) 
-							|| (this._DON_DAT_HANG_NCC.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._DON_DAT_HANG_NCC.Entity = null;
-						previousValue.PHIEUNHAPs.Remove(this);
-					}
-					this._DON_DAT_HANG_NCC.Entity = value;
-					if ((value != null))
-					{
-						value.PHIEUNHAPs.Add(this);
-						this._MADDH = value.MADDH;
-					}
-					else
-					{
-						this._MADDH = default(string);
-					}
-					this.SendPropertyChanged("DON_DAT_HANG_NCC");
-				}
 			}
 		}
 		

@@ -324,5 +324,11 @@ namespace QLST
             Program.frmDanhMucNhaCungCap.Show();
             menuStrip2.Show();
         }
+
+        private void nhậpHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNhapHang frm = new frmNhapHang();
+            frm.ShowDialog();
+        }
     }
 }
