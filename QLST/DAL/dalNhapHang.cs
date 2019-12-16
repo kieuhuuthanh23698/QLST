@@ -14,6 +14,10 @@ namespace DAL
         {
             return qlst.PHIEUNHAPs.Count(t => t.MAPN.Equals(maPN)) > 0 ? true : false;
         }
+        public List<DON_DAT_HANG_NCC> getdondathang()
+        {
+            return qlst.DON_DAT_HANG_NCCs.Select(t => t).ToList();
+        }
         public string TaoMaPhieuNhap()
         {
             string maPN = "";

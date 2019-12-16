@@ -330,5 +330,32 @@ namespace QLST
             frmNhapHang frm = new frmNhapHang();
             frm.ShowDialog();
         }
+
+        private void đặtHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < tab.Items.Count; i++)
+                if (tab.Items[i].ToString() == "Đặt hàng")
+                {
+                    tab.Items[i].Visible = true;
+                    menuStrip2.Show();
+                    return;
+                }
+            DevComponents.DotNetBar.DockContainerItem item = new DevComponents.DotNetBar.DockContainerItem("Đặt hàng", "Đặt hàng");
+            tab.Items.Add(item);
+            Image a = global::QLST.Properties.Resources.hang_hoa;
+            item.Image = a;
+            item.Selected = true;
+            DevComponents.DotNetBar.PanelDockContainer panel = new DevComponents.DotNetBar.PanelDockContainer();
+            panel.Name = "Đặt hàng";
+            item.Control = new Control();
+            item.Control = panel;
+            if (Program.frmDatHang == null || Program.frmDatHang.IsDisposed)
+                Program.frmDatHang = new frmDatHang();
+            Program.frmDatHang.Dock = DockStyle.Fill;
+            Program.frmDatHang.TopLevel = false;
+            item.Control.Controls.Add(Program.frmDatHang);
+            Program.frmDatHang.Show();
+            menuStrip2.Show();
+        }
     }
 }

@@ -97,5 +97,35 @@ namespace DAL
             context.KHACH_HANGs.Where(t => t.MAKH == maKH).FirstOrDefault().TICHLUY += (int.Parse(tichDiem) - int.Parse(dungDiemTichLuy));
 
         }
+
+        public bool TaoDonHang(string maDH, string maNCC, DateTime ngaylap, string ghichu, List<CHI_TIET_DDH> chitiet)
+        {
+            try
+            {
+                DON_DAT_HANG_NCC ddh = new DON_DAT_HANG_NCC();
+                ddh.MADDH = maDH;
+                ddh.MANCC = maNCC;
+                ddh.NGAYDAT = ngaylap;
+                ddh.GHICHU_DDH = ghichu;
+                context.DON_DAT_HANG_NCCs.InsertOnSubmit(ddh);
+                context.CHI_TIET_DDHs.InsertAllOnSubmit(chitiet);
+                context.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                context = Context.getInstance();
+                return false;
+            }
+        }
+        public int getMaxIDDonDatHang()
+        {
+            if (context.DON_DAT_HANG_NCCs.Count() == 0)
+                return 1;
+            DON_DAT_HANG_NCC ddh = (from dh in context.DON_DAT_HANG_NCCs orderby dh.MADDH descending select dh).FirstOrDefault();
+            return int.Parse(ddh.MADDH.ToString().Substring(3))+1;
+        }
     }
+
+
 }

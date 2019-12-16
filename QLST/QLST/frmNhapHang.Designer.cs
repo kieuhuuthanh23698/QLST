@@ -33,7 +33,6 @@
             this.panelPN = new System.Windows.Forms.Panel();
             this.btnThemPhieu = new System.Windows.Forms.Button();
             this.datePN = new System.Windows.Forms.DateTimePicker();
-            this.txtMaDDH = new System.Windows.Forms.TextBox();
             this.txtMaPhieu = new System.Windows.Forms.TextBox();
             this.lblNgayLap = new System.Windows.Forms.Label();
             this.lblMaDDH = new System.Windows.Forms.Label();
@@ -67,6 +66,7 @@
             this.TENSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HANGHOA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PHIEUNHAP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbb_dondathang = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panelPN.SuspendLayout();
             this.panelSP.SuspendLayout();
@@ -101,9 +101,9 @@
             // panelPN
             // 
             this.panelPN.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panelPN.Controls.Add(this.cbb_dondathang);
             this.panelPN.Controls.Add(this.btnThemPhieu);
             this.panelPN.Controls.Add(this.datePN);
-            this.panelPN.Controls.Add(this.txtMaDDH);
             this.panelPN.Controls.Add(this.txtMaPhieu);
             this.panelPN.Controls.Add(this.lblNgayLap);
             this.panelPN.Controls.Add(this.lblMaDDH);
@@ -131,14 +131,6 @@
             this.datePN.Name = "datePN";
             this.datePN.Size = new System.Drawing.Size(166, 20);
             this.datePN.TabIndex = 2;
-            // 
-            // txtMaDDH
-            // 
-            this.txtMaDDH.Enabled = false;
-            this.txtMaDDH.Location = new System.Drawing.Point(383, 6);
-            this.txtMaDDH.Name = "txtMaDDH";
-            this.txtMaDDH.Size = new System.Drawing.Size(148, 20);
-            this.txtMaDDH.TabIndex = 1;
             // 
             // txtMaPhieu
             // 
@@ -390,7 +382,6 @@
             this.MAPN.HeaderText = "Mã phiếu nhập";
             this.MAPN.Name = "MAPN";
             this.MAPN.Visible = false;
-            this.MAPN.Width = 103;
             // 
             // NGAYSX
             // 
@@ -457,6 +448,14 @@
             this.PHIEUNHAP.ReadOnly = true;
             this.PHIEUNHAP.Visible = false;
             // 
+            // cbb_dondathang
+            // 
+            this.cbb_dondathang.FormattingEnabled = true;
+            this.cbb_dondathang.Location = new System.Drawing.Point(384, 5);
+            this.cbb_dondathang.Name = "cbb_dondathang";
+            this.cbb_dondathang.Size = new System.Drawing.Size(162, 21);
+            this.cbb_dondathang.TabIndex = 4;
+            // 
             // frmNhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,7 +492,6 @@
         private System.Windows.Forms.Panel panelPN;
         private System.Windows.Forms.Button btnThemPhieu;
         private System.Windows.Forms.DateTimePicker datePN;
-        private System.Windows.Forms.TextBox txtMaDDH;
         private System.Windows.Forms.TextBox txtMaPhieu;
         private System.Windows.Forms.Label lblNgayLap;
         private System.Windows.Forms.Label lblMaDDH;
@@ -527,5 +525,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TENSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn HANGHOA;
         private System.Windows.Forms.DataGridViewTextBoxColumn PHIEUNHAP;
+        private System.Windows.Forms.ComboBox cbb_dondathang;
     }
 }

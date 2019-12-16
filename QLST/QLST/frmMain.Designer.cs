@@ -180,6 +180,7 @@
             this.đặtHàngToolStripMenuItem.Name = "đặtHàngToolStripMenuItem";
             this.đặtHàngToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.đặtHàngToolStripMenuItem.Text = "Đặt hàng";
+            this.đặtHàngToolStripMenuItem.Click += new System.EventHandler(this.đặtHàngToolStripMenuItem_Click);
             // 
             // danhMụcKháchHàngToolStripMenuItem
             // 
@@ -224,7 +225,7 @@
             // 
             this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem.Image = global::QLST.Properties.Resources.nhan_vien;
             this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem.Name = "pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem";
-            this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
+            this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem.Text = "PHÂN QUYỀN NHÂN VIÊN";
             this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem.Click += new System.EventHandler(this.pHÂNQUYỀNNHÂNVIÊNToolStripMenuItem_Click);
             // 
@@ -390,7 +391,7 @@
             this.dockSite4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dockSite4.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer();
             this.dockSite4.Location = new System.Drawing.Point(0, 609);
-            this.dockSite4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dockSite4.Margin = new System.Windows.Forms.Padding(2);
             this.dockSite4.Name = "dockSite4";
             this.dockSite4.Size = new System.Drawing.Size(1028, 0);
             this.dockSite4.TabIndex = 44;
@@ -404,7 +405,7 @@
             this.dockSite9.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer(new DevComponents.DotNetBar.DocumentBaseContainer[] {
             ((DevComponents.DotNetBar.DocumentBaseContainer)(new DevComponents.DotNetBar.DocumentBarContainer(this.tab, 1028, 552)))}, DevComponents.DotNetBar.eOrientation.Horizontal);
             this.dockSite9.Location = new System.Drawing.Point(0, 57);
-            this.dockSite9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dockSite9.Margin = new System.Windows.Forms.Padding(2);
             this.dockSite9.Name = "dockSite9";
             this.dockSite9.Size = new System.Drawing.Size(1028, 552);
             this.dockSite9.TabIndex = 49;
@@ -446,7 +447,7 @@
             this.panelDockContainer1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
             this.panelDockContainer1.Controls.Add(this.menuStrip1);
             this.panelDockContainer1.Location = new System.Drawing.Point(3, 28);
-            this.panelDockContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelDockContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.panelDockContainer1.Name = "panelDockContainer1";
             this.panelDockContainer1.Size = new System.Drawing.Size(1022, 521);
             this.panelDockContainer1.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -507,7 +508,7 @@
             this.dockSite1.Dock = System.Windows.Forms.DockStyle.Left;
             this.dockSite1.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer();
             this.dockSite1.Location = new System.Drawing.Point(0, 57);
-            this.dockSite1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dockSite1.Margin = new System.Windows.Forms.Padding(2);
             this.dockSite1.Name = "dockSite1";
             this.dockSite1.Size = new System.Drawing.Size(0, 552);
             this.dockSite1.TabIndex = 41;
@@ -519,7 +520,7 @@
             this.dockSite2.Dock = System.Windows.Forms.DockStyle.Right;
             this.dockSite2.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer();
             this.dockSite2.Location = new System.Drawing.Point(1028, 57);
-            this.dockSite2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dockSite2.Margin = new System.Windows.Forms.Padding(2);
             this.dockSite2.Name = "dockSite2";
             this.dockSite2.Size = new System.Drawing.Size(0, 552);
             this.dockSite2.TabIndex = 42;
@@ -530,7 +531,7 @@
             this.dockSite8.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.dockSite8.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dockSite8.Location = new System.Drawing.Point(0, 609);
-            this.dockSite8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dockSite8.Margin = new System.Windows.Forms.Padding(2);
             this.dockSite8.Name = "dockSite8";
             this.dockSite8.Size = new System.Drawing.Size(1028, 0);
             this.dockSite8.TabIndex = 48;
@@ -541,7 +542,7 @@
             this.dockSite5.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.dockSite5.Dock = System.Windows.Forms.DockStyle.Left;
             this.dockSite5.Location = new System.Drawing.Point(0, 0);
-            this.dockSite5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dockSite5.Margin = new System.Windows.Forms.Padding(2);
             this.dockSite5.Name = "dockSite5";
             this.dockSite5.Size = new System.Drawing.Size(0, 609);
             this.dockSite5.TabIndex = 45;
@@ -552,7 +553,7 @@
             this.dockSite6.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.dockSite6.Dock = System.Windows.Forms.DockStyle.Right;
             this.dockSite6.Location = new System.Drawing.Point(1028, 0);
-            this.dockSite6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dockSite6.Margin = new System.Windows.Forms.Padding(2);
             this.dockSite6.Name = "dockSite6";
             this.dockSite6.Size = new System.Drawing.Size(0, 609);
             this.dockSite6.TabIndex = 46;
@@ -563,7 +564,7 @@
             this.dockSite7.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.dockSite7.Dock = System.Windows.Forms.DockStyle.Top;
             this.dockSite7.Location = new System.Drawing.Point(0, 0);
-            this.dockSite7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dockSite7.Margin = new System.Windows.Forms.Padding(2);
             this.dockSite7.Name = "dockSite7";
             this.dockSite7.Size = new System.Drawing.Size(1028, 0);
             this.dockSite7.TabIndex = 47;
@@ -575,7 +576,7 @@
             this.dockSite3.Dock = System.Windows.Forms.DockStyle.Top;
             this.dockSite3.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer();
             this.dockSite3.Location = new System.Drawing.Point(0, 0);
-            this.dockSite3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dockSite3.Margin = new System.Windows.Forms.Padding(2);
             this.dockSite3.Name = "dockSite3";
             this.dockSite3.Size = new System.Drawing.Size(1028, 0);
             this.dockSite3.TabIndex = 43;
@@ -606,7 +607,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1027, 597);
             this.Name = "frmMain";

@@ -22,6 +22,7 @@ namespace QLST
         {
             PHIEUNHAP pn = new PHIEUNHAP();
             pn.MAPN = txtMaPhieu.Text.Trim();
+            pn.MADDH = (cbb_dondathang.Items.Count == 0 ? null : cbb_dondathang.SelectedValue.ToString());
             pn.NGAYLAP_PN = datePN.Value;
             if (dal.ThemPhieuNhap(pn))
             {
@@ -35,6 +36,9 @@ namespace QLST
         private void frmNhapHang_Load(object sender, EventArgs e)
         {
             txtMaPhieu.Text = dal.TaoMaPhieuNhap();
+            cbb_dondathang.DataSource = dal.getdondathang();
+            cbb_dondathang.DisplayMember = "MADDH";
+            cbb_dondathang.ValueMember = "MADDH";
         }
 
         private void cboSP_DropDown(object sender, EventArgs e)
